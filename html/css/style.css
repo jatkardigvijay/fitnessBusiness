@@ -30,7 +30,7 @@ h6 {
 
 p {
     font-size: 16px;
-    color:#d0d2dc80;
+    color:#dadeed80;
     margin: 15px 0 20px 0;
 }
 
@@ -112,7 +112,8 @@ body{
 
 #hero h1{
     /* color:#0aaea3; */
-    color:#088178;
+    /* color:#088178; */
+    color:#0cc2a4c2;
 }
 
 #hero button{
@@ -120,7 +121,8 @@ body{
     background-color: transparent;
     /* color: #1d8e86; */
     /* color:#28bcb2; */
-    color:#088178;
+    /* color:#088178; */
+    color:bisque;
     border: 0;
     padding: 15px 80px 15px 65px;
     background-repeat: no-repeat;
