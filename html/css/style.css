@@ -1,11 +1,8 @@
-/* @import url('https://fonts.googleapis.com/css?family=League Spartan:wght@100;200;00;00;500;600;700;800;900&display=swap'); */
-
 * {
     box-sizing: border-box;
     margin: 0;
     font-family: 'Spartan',sans-serif;
-    /* padding: 0; */
-    /* font-family: 'Spartan',sans-serif; */
+    padding: 0;
 }
 
 h1 {
@@ -56,9 +53,15 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 20px 80px;
-    background: #d0d2dc80;
+    /* background: #d0d2dc80; */
+    background: #0e0d0dfa;
+    /* background-color: #e3e6f3; */
     /* x axis - 0, y axis - 5px, radius - 15px */
     box-shadow: 0 5px 15px rgb(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 #navbar {
@@ -77,12 +80,13 @@ body{
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
-    color: #0e0d0dc7;
+    color: #d0d2dc80;
+    /* color: #0e0d0dc7; */
     transition: 0.3s ease;
 }
 
 #navbar li a:hover{
-    color: #088178;;
+    color: #088178;
     text-decoration: underline;
 }
 
@@ -90,7 +94,7 @@ body{
 
 #hero {
     /* background-image: url("file:///D:/DBS/Classes/Web%20and%20Mobile%20Technologies/B9IS124_10508676_10612366_fitnessBusiness/fitnessBusiness/html/images/hero.png"); */
-    background-image: url("../images/hero06.jpg");
+    background-image: url("../images/hero.jpg");
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -107,13 +111,16 @@ body{
 }
 
 #hero h1{
-    color:#088178
+    /* color:#0aaea3; */
+    color:#088178;
 }
 
 #hero button{
     background-image: url("../images/button.png");
     background-color: transparent;
-    color: #088178;
+    /* color: #1d8e86; */
+    /* color:#28bcb2; */
+    color:#088178;
     border: 0;
     padding: 15px 80px 15px 65px;
     background-repeat: no-repeat;
