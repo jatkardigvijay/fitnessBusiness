@@ -15,24 +15,51 @@
 
 <body>
 
+
     <section id="header">
-        <section id="header">
-            <a href="#"><img src="images/DBS.png" class="logo" alt="dbs logo"></a>
-            <div>
-                <ul id="navbar">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a class="active" href="productlist.html">Shop</a></li>
-                    <li><a href="reserve.html"><i class="fa-sharp fa-solid fa fa-shopping-bag"></i></a></li>
-                </ul>
+        <a href="#"><img src="images/DBS.png" class="logo" alt="dbs logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="productlist.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="reserve.html"><i class="fa-sharp fa-solid fa fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="reserve.html"><i class="fa-sharp fa-solid fa fa-shopping-bag"></i></a>
+        </div>
+    </section>
+
+    <section id="page-header">
+        <h2>Super value deals</h2>
+        <p>Save more with coupons & upto 20% off!</p>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='sproduct.html';">
+                <img src="img/products/f1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="hero">
-            <h2>Super value deals</h2>
-            <p>Save more with coupons & upto 70% off!</p>
-        </section>
-
-        <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
