@@ -7,17 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Injay Fitness Shop</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/> -->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/productstyle.css">
+    <script src="js/data.js"></script>
     <!-- <link rel="stylesheet" href="D:\DBS\Classes\Web and Mobile Technologies\B9IS124_10508676_10612366_fitnessBusiness\fitnessBusiness\css\style.css"> -->
 
 </head>
 
 <body>
-
-
-
     <section id="header">
         <a href="#"><img src="images/DBS.png" class="logo" alt="dbs logo"></a>
         <div>
@@ -32,7 +30,7 @@
         </div>
         <div id="mobile" hidden>
             <a href="reserve.html"><i class="fa-sharp fa-solid fa fa-shopping-bag"></i></a>
-        </div>
+        </div> -->
     </section>
 
     <section id="page-header">
@@ -41,7 +39,7 @@
     </section>
 
     <section id="product1" class="section-p1">
-        <div class="pro-container">
+        <div class="pro-container" id="shopContainer">
             <div class="pro" onclick="window.location='productView.html'">
                 <img src="images/dumbell10kg.png" alt="">
                 <div class="des">
@@ -166,7 +164,62 @@
         </div>
     </section>
 
+    <footer class="pro-footer">
+        <div class="pro-container">
+            <div class="pro-row">
+                <div class="pro-footer-col">
+                    <h4>company</h4>
+                    <ul class="pro-ul">
+                        <li>
+                            <a href="#">about us</a>
+                            <a href="#">our services</a>
+                            <a href="#">privacy policy</a>
+                            <a href="#">contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pro-footer-col">
+                    <h4>get help</h4>
+                    <ul class="pro-ul">
+                        <li>
+                            <a href="#">FAQ</a>
+                            <a href="#">shipping</a>
+                            <a href="#">returns</a>
+                            <a href="#">order status</a>
+                            <a href="#">payment options</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pro-footer-col">
+                    <h4>Online shop</h4>
+                    <ul class="pro-ul">
+                        <li>
+                            <a href="#">Sign In</a>
+                            <a href="#">View Cart</a>
+                            <a href="#">My Wishlist</a>
+                            <a href="#">Help</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pro-footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"> <i class="fa fa-facebook-official"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                        <a href="#"><i class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
     <script src="js/script.js"></script>
+    <script>
+        allProducts()
+    </script>
 </body>
+
 
 </html>
