@@ -1,4 +1,4 @@
-/* Footer */
+    /* Footer */
 
 .pro-container {
     max-width: 1170px;
@@ -89,7 +89,6 @@
         width: 50%;
         margin-bottom: 30px;
     }
-}
 
 @media(max-width:574px) {
     .footer-col {
