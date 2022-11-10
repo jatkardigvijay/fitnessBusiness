@@ -130,7 +130,7 @@ function singleProduct(details) {
             details.innerHTML = `<h4>${x.name}</h4>
             <h2>${x.price}</h2>
             <input type="number" value="1" min="1">
-            <button class="normal">Add To Cart</button>
+            <button class="cart-button" onclick="openModal();" style="margin-top: 17px; width:100%">Reserve Now</button>
             <h4>Product Details</h4>
             <span>${x.description}
             </span>`
