@@ -136,8 +136,14 @@ function singleProduct(details) {
         if (id === x.id) {
             details.innerHTML = `<h4>${x.name}</h4>
             <h2>${x.price}</h2>
-            <input type="number" value="1" min="1">
-            <button class="cart-button" onclick="openModal();" style="margin-top: 17px; width:100%">Reserve</button>
+            
+            <div class="quantityContainer">
+            <button id="incrDecr" onclick="decrement()">-</button>
+            <input id="prInput" inputmode=”numeric” type="number" value="0" min=1 max=100>
+            <button id="incrDecr" onclick="increment()" >+</button>
+            </div>
+
+            <button class="cart-button" onclick="openModal();">Reserve</button>
             <h4>Product Details</h4>
             <span>${x.description}
             </span>`
@@ -148,7 +154,6 @@ function singleProduct(details) {
             </div>`
             })
             imageDetails.innerHTML = `<img src="${x.image[0]}" width="100%" id="MainImg" alt="">
-
             <div id="small-img-group" class="small-img-group">
             ${a}
             </div>`
@@ -160,3 +165,12 @@ function changeImage(x) {
     imgD = document.getElementById("MainImg")
     imgD.src = x
 }
+
+function increment() {
+    document.getElementById('prInput').stepUp();
+ }
+ function decrement() {
+    document.getElementById('prInput').stepDown();
+ }
+
+
