@@ -39,32 +39,36 @@ const products = [
 
     },
     {
-        id: "olympicbar1",
-        name: "Olympic Bar",
-        description: "The Gildan Ultra Cotton T-shirt is made from a substantial 6.0 oz. per sq. yd. fabric constructed from 100% cotton, this classic fit preshrunk jersey knit provides unmatched comfort with each wear. Featuring a taped neck and shoulder, and a seamless double-needle collar, and available in a range of colors, it offers it all in the ultimate head-turning package.",
-        price: "€15",
+        id: "indoorCyclingBike",
+        name: "G6 Indoor Cycling Bike",
+        description: "This indoor cycling bike makes your static cycling experience much better with the facilities it includes along with it. It is integrated with the IT system, making it more easy to save and track the fitness journey and steadily progress in the same along with speed and the calorie burned as the staple facilities being provided. The product also has 20% improved seating than the earlier one, which is in turn comfortable for the user.",
+        price: "€315",
         image: [
-            "images/plates.png",
+            "images/indoorcyclingbike/indoorcyclingbike1.png",
+            "images/indoorcyclingbike/indoorcyclingbike2.png",
+            "images/indoorcyclingbike/indoorcyclingbike3.png",
+            "images/indoorcyclingbike/indoorcyclingbike4.png"
+        ]
+
+    },
+    {
+        id: "legpressmachine",
+        name: "Seated Leg Press",
+        description: "Standing or seating, the legs are always to be strong. Ideal leg press machine for the gym beginners, preparing for the next level leg workout (smith machine, Animal Plate Load Leg Press, etc.). The machine has a QR code(opens the application and has relevant videos) makes the user do the exercises without the need of trainer. Glutes, Quadriceps are the major muscles which are targetted.",
+        price: "€10,650",
+        image: [
+            "images/legpressmachine/legpress1.png",
+            "images/legpressmachine/legpress2.png",
+            "images/legpressmachine/legpress3.png",
+            "images/legpressmachine/legpress4.png"
 
         ]
 
     },
     {
-        id: "dumbell1",
-        name: "Dumbell1 - 10kg",
-        description: "The Gildan Ultra Cotton T-shirt is made from a substantial 6.0 oz. per sq. yd. fabric constructed from 100% cotton, this classic fit preshrunk jersey knit provides unmatched comfort with each wear. Featuring a taped neck and shoulder, and a seamless double-needle collar, and available in a range of colors, it offers it all in the ultimate head-turning package.",
-        price: "€65",
-        image: [
-            "images/DBS.png",
-            "images/plates.png",
-
-        ]
-
-    },
-    {
-        id: "olympicbar1",
+        id: "treadmill",
         name: "Olympic Bar",
-        description: "The Gildan Ultra Cotton T-shirt is made from a substantial 6.0 oz. per sq. yd. fabric constructed from 100% cotton, this classic fit preshrunk jersey knit provides unmatched comfort with each wear. Featuring a taped neck and shoulder, and a seamless double-needle collar, and available in a range of colors, it offers it all in the ultimate head-turning package.",
+        description: "",
         price: "€65",
         image: [
             "images/plates1.png",
