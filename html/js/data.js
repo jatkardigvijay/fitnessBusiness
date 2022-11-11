@@ -66,35 +66,41 @@ const products = [
 
     },
     {
-        id: "treadmill",
-        name: "Olympic Bar",
-        description: "",
-        price: "€65",
+        id: "kettlebell",
+        name: "Kettlebell – 8 KG",
+        description: "This is high quality, ergonomically designed kettlebell available in variety of colours. It doesn't take a space and hence can be used at the gym and for home workout as well. The grip is designed much efficiently providing an ease to the hands after being lifted.",
+        price: "€40",
         image: [
-            "images/plates1.png",
-
+            "images/kettlebells/kettlebell1.png",
+            "images/kettlebells/kettlebell2.png",
+            "images/kettlebells/kettlebell3.png",
+            "images/kettlebells/kettlebell4.png",
         ]
 
     },
     {
-        id: "dumbell1",
-        name: "Dumbell1 - 10kg",
-        description: "The Gildan Ultra Cotton T-shirt is made from a substantial 6.0 oz. per sq. yd. fabric constructed from 100% cotton, this classic fit preshrunk jersey knit provides unmatched comfort with each wear. Featuring a taped neck and shoulder, and a seamless double-needle collar, and available in a range of colors, it offers it all in the ultimate head-turning package.",
-        price: "€65",
+        id: "benchmachine",
+        name: "Weight Bench",
+        description: "This unique and adjustable bench can be used for varied amount of exercises, bench presses (incline, flat, decline). Machine is generally useful for home workout or a gym where number of people is small.",
+        price: "125",
         image: [
-            "images/DBS.png",
-            "images/plates1.png",
-
+            "images/bench/bench1.png",
+            "images/bench/bench2.png",
+            "images/bench/bench3.png",
+            "images/bench/bench4.png",
         ]
 
     },
     {
-        id: "olympicbar11",
-        name: "Olympic Bar",
-        description: "The Gildan Ultra Cotton T-shirt is made from a substantial 6.0 oz. per sq. yd. fabric constructed from 100% cotton, this classic fit preshrunk jersey knit provides unmatched comfort with each wear. Featuring a taped neck and shoulder, and a seamless double-needle collar, and available in a range of colors, it offers it all in the ultimate head-turning package.",
-        price: "€65",
+        id: "theraband",
+        name: "Thera Band",
+        description: "Thera bands is a one quick solution for many of the problems which includes physiotherapy amongst the main exercises. We can perofrm a wide range of exercises with therabands thus making it useful for home as well as gym i.e. both environments. One or more thera bands can be buyed according to the strength requirement.",
+        price: "€8 - €75",
         image: [
-            "images/plates1.png",
+            "images/theraband/theraband1.png",
+            "images/theraband/theraband2.png",
+            "images/theraband/theraband3.png",
+            "images/theraband/theraband4.png"
         ]
     }
 ]
