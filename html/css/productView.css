@@ -106,6 +106,7 @@
 #prInput {
     width: 38px !important;
     height: 31px !important;
+    margin: 8px;
     /* font-size: 25px; */
     /* background-color: burlywood; */
     /* color: honeydew; */
