@@ -1,19 +1,20 @@
 const products = [
     {
         id: "dumbell",
-        name: "Dumbell - 10kg working ",
-        description: "The Gildan Ultra Cotton T-shirt is made from a substantial 6.0 oz. per sq. yd. fabric constructed from 100% cotton, this classic fit preshrunk jersey knit provides unmatched comfort with each wear. Featuring a taped neck and shoulder, and a seamless double-needle collar, and available in a range of colors, it offers it all in the ultimate head-turning package.",
+        name: "Dumbell - 10 kg (Sold in pairs only)",
+        description: "These are the authentic hex dumbells which are covered from all sides with hexagonal shaped rubber so that they do not roll even if fall. The grip, is made such that sweating won't cause any such problems like sliding from hands. They can be used for multiple body part workouts.",
         price: "€65",
         image: [
-            "images/DBS.png",
-            "images/plates.png",
-
+            "images/dumbells/dumbell10kg3.png",
+            "images/dumbells/dumbell10kg1.png",
+            "images/dumbells/dumbell10kg4.png",
+            "images/dumbells/dumbell10kg5.png"
         ]
 
     },
     {
         id: "olympicbar",
-        name: "Olympic Bar",
+        name: "Olympic Bar - 20 kg",
         description: "The Gildan Ultra Cotton T-shirt is made from a substantial 6.0 oz. per sq. yd. fabric constructed from 100% cotton, this classic fit preshrunk jersey knit provides unmatched comfort with each wear. Featuring a taped neck and shoulder, and a seamless double-needle collar, and available in a range of colors, it offers it all in the ultimate head-turning package.",
         price: "€65",
         image: [
@@ -29,7 +30,7 @@ const products = [
         price: "€65",
         image: [
             "images/DBS.png",
-            "images/plates.png",
+            "images/plates",
 
         ]
 
