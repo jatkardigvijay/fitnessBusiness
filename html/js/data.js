@@ -95,12 +95,11 @@ const products = [
         price: "€65",
         image: [
             "images/plates1.png",
-
         ]
-
     }
 ]
 
+//Display the details of the Products using JSON 
 
 function allProducts() {
     a = document.getElementById("shopContainer")
@@ -138,7 +137,7 @@ function singleProduct(details) {
             details.innerHTML = `<h4>${x.name}</h4>
             <h2>${x.price}</h2>
             <input type="number" value="1" min="1">
-            <button class="cart-button" onclick="openModal();" style="margin-top: 17px; width:100%">Reserve Now</button>
+            <button class="cart-button" onclick="openModal();" style="margin-top: 17px; width:100%">Reserve</button>
             <h4>Product Details</h4>
             <span>${x.description}
             </span>`
@@ -152,10 +151,7 @@ function singleProduct(details) {
 
             <div id="small-img-group" class="small-img-group">
             ${a}
-            </div>
-            `
-
-
+            </div>`
         }
     })
 }
