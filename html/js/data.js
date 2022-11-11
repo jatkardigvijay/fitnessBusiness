@@ -22,19 +22,19 @@ const products = [
             "images/olympicbars/olympicbar1.png",
             "images/olympicbars/olympicbar3.png",
             "images/olympicbars/olympicbar4.png"
-
         ]
 
     },
     {
-        id: "dumbell1",
-        name: "Dumbell1 - 20kg",
-        description: "The Gildan Ultra Cotton T-shirt is made from a substantial 6.0 oz. per sq. yd. fabric constructed from 100% cotton, this classic fit preshrunk jersey knit provides unmatched comfort with each wear. Featuring a taped neck and shoulder, and a seamless double-needle collar, and available in a range of colors, it offers it all in the ultimate head-turning package.",
-        price: "€65",
+        id: "yogamat",
+        name: "Yogamat (Pilates mat)",
+        description: "With this great freebody exercise, an astute quality Yoga mat gives a feeling of relaxtion and stress reduction. Moreover, it is easy for cleaning and doing the maintainance this mat.",
+        price: "€15",
         image: [
-            "images/DBS.png",
-            "images/plates",
-
+            "images/yogamats/yogamat1.png",
+            "images/yogamats/yogamat2.png",
+            "images/yogamats/yogamat3.png",
+            "images/yogamats/yogamat4.png"
         ]
 
     },
@@ -42,7 +42,7 @@ const products = [
         id: "olympicbar1",
         name: "Olympic Bar",
         description: "The Gildan Ultra Cotton T-shirt is made from a substantial 6.0 oz. per sq. yd. fabric constructed from 100% cotton, this classic fit preshrunk jersey knit provides unmatched comfort with each wear. Featuring a taped neck and shoulder, and a seamless double-needle collar, and available in a range of colors, it offers it all in the ultimate head-turning package.",
-        price: "€65",
+        price: "€15",
         image: [
             "images/plates.png",
 
