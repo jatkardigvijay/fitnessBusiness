@@ -15,10 +15,13 @@ const products = [
     {
         id: "olympicbar",
         name: "Olympic Bar - 20 kg",
-        description: "The Gildan Ultra Cotton T-shirt is made from a substantial 6.0 oz. per sq. yd. fabric constructed from 100% cotton, this classic fit preshrunk jersey knit provides unmatched comfort with each wear. Featuring a taped neck and shoulder, and a seamless double-needle collar, and available in a range of colors, it offers it all in the ultimate head-turning package.",
-        price: "€65",
+        description: "Particular for lifts/deadlifts until 100kgs, squats, barbell bench press. This bar is composed of high quality carbon steel. Collars are given free along with this bar.",
+        price: "€90",
         image: [
-            "images/plates.png",
+            "images/olympicbars/olympicbar2.png",
+            "images/olympicbars/olympicbar1.png",
+            "images/olympicbars/olympicbar3.png",
+            "images/olympicbars/olympicbar4.png"
 
         ]
 
@@ -36,7 +39,7 @@ const products = [
 
     },
     {
-        id: "olympicbar",
+        id: "olympicbar1",
         name: "Olympic Bar",
         description: "The Gildan Ultra Cotton T-shirt is made from a substantial 6.0 oz. per sq. yd. fabric constructed from 100% cotton, this classic fit preshrunk jersey knit provides unmatched comfort with each wear. Featuring a taped neck and shoulder, and a seamless double-needle collar, and available in a range of colors, it offers it all in the ultimate head-turning package.",
         price: "€65",
@@ -59,12 +62,12 @@ const products = [
 
     },
     {
-        id: "olympicbar",
+        id: "olympicbar1",
         name: "Olympic Bar",
         description: "The Gildan Ultra Cotton T-shirt is made from a substantial 6.0 oz. per sq. yd. fabric constructed from 100% cotton, this classic fit preshrunk jersey knit provides unmatched comfort with each wear. Featuring a taped neck and shoulder, and a seamless double-needle collar, and available in a range of colors, it offers it all in the ultimate head-turning package.",
         price: "€65",
         image: [
-            "images/plates.png",
+            "images/plates1.png",
 
         ]
 
@@ -76,18 +79,18 @@ const products = [
         price: "€65",
         image: [
             "images/DBS.png",
-            "images/plates.png",
+            "images/plates1.png",
 
         ]
 
     },
     {
-        id: "olympicbar",
+        id: "olympicbar11",
         name: "Olympic Bar",
         description: "The Gildan Ultra Cotton T-shirt is made from a substantial 6.0 oz. per sq. yd. fabric constructed from 100% cotton, this classic fit preshrunk jersey knit provides unmatched comfort with each wear. Featuring a taped neck and shoulder, and a seamless double-needle collar, and available in a range of colors, it offers it all in the ultimate head-turning package.",
         price: "€65",
         image: [
-            "images/plates.png",
+            "images/plates1.png",
 
         ]
 
