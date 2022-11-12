@@ -102,27 +102,85 @@ const products = [
             "images/theraband/theraband3.png",
             "images/theraband/theraband4.png"
         ]
+    },
+    {
+        id: "benchmachine",
+        name: "Weight Bench",
+        description: "This unique and adjustable bench can be used for varied amount of exercises, bench presses (incline, flat, decline). Machine is generally useful for home workout or a gym where number of people is small.",
+        price: "125",
+        image: [
+            "images/bench/bench1.png",
+            "images/bench/bench2.png",
+            "images/bench/bench3.png",
+            "images/bench/bench4.png",
+        ]
+
+    },
+    {
+        id: "theraband",
+        name: "Thera Band",
+        description: "Thera bands is a one quick solution for many of the problems which includes physiotherapy amongst the main exercises. We can perofrm a wide range of exercises with therabands thus making it useful for home as well as gym i.e. both environments. One or more thera bands can be buyed according to the strength requirement.",
+        price: "€8 - €75",
+        image: [
+            "images/theraband/theraband1.png",
+            "images/theraband/theraband2.png",
+            "images/theraband/theraband3.png",
+            "images/theraband/theraband4.png"
+        ]
+    },
+    {
+        id: "benchmachine",
+        name: "Weight Bench",
+        description: "This unique and adjustable bench can be used for varied amount of exercises, bench presses (incline, flat, decline). Machine is generally useful for home workout or a gym where number of people is small.",
+        price: "125",
+        image: [
+            "images/bench/bench1.png",
+            "images/bench/bench2.png",
+            "images/bench/bench3.png",
+            "images/bench/bench4.png",
+        ]
+
+    },
+    {
+        id: "theraband",
+        name: "Thera Band",
+        description: "Thera bands is a one quick solution for many of the problems which includes physiotherapy amongst the main exercises. We can perofrm a wide range of exercises with therabands thus making it useful for home as well as gym i.e. both environments. One or more thera bands can be buyed according to the strength requirement.",
+        price: "€8 - €75",
+        image: [
+            "images/theraband/theraband1.png",
+            "images/theraband/theraband2.png",
+            "images/theraband/theraband3.png",
+            "images/theraband/theraband4.png"
+        ]
     }
 ]
 
 //Display the details of the Products using JSON 
 
 function allProducts() {
-    a = document.getElementById("shopContainer")
+    a = document.getElementById("productGrid")
     let x = ""
     products.map((item) => {
-        x = x + `<div class="pro" id="${item.id}" onclick="productOnClick(this.id)" >
-        <img src=${item.image[0]} alt="">
-        <div class="des">
-            <h5>${item.name}</h5>
-            <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+        x = x + `                <div class="product-container" role="listitem">
+        <div class="image-wrap">
+            <div class="sale">
+                SALE
             </div>
-            <h4>${item.price}</h4>
+            <div 
+                style="background-image:url(${item.image[0]})"
+                class="product-image product-image-size-m">
+            </div>
+            <div class="view-product-container">
+                                <a style="opacity: 1;" class="view-button">
+                                    <div class="button-small white-small">
+                                        <div>View Product</div>
+                                    </div>
+                                </a>
+                            </div>
+        </div>
+        <div class="product4-content-wrap"><a class="size6-link">${item.name}</a>
+            <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
+                class="size4-text">${item.price}</div>
         </div>
     </div>`
     })
@@ -174,9 +232,9 @@ function changeImage(x) {
 
 function increment() {
     document.getElementById('prInput').stepUp();
- }
- function decrement() {
+}
+function decrement() {
     document.getElementById('prInput').stepDown();
- }
+}
 
 
