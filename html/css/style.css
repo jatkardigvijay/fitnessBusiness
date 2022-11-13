@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    /* font-family: 'Spartan', sans-serif; */
     font-family: 'Work Sans', sans-serif;
     padding: 0;
 }
@@ -111,18 +110,6 @@ body {
     text-decoration: none;
     color: #dadeed80;
 }
-
-/* #navbar li a:active::after,
-#navbar li a:hover::after 
-{
-    content: "";
-    width: 30%;
-    height: 2px;
-    background: #088178;
-    position: absolute;
-    bottom:-4px;
-    left: 20px;
-} */
 
 /* Home Page */
 
@@ -652,6 +639,7 @@ ul {
     background-color: white;
     width: 100%;
     z-index: 1;
+    border-bottom: 1px solid #ebedee;
 
 }
 

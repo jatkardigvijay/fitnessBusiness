@@ -111,7 +111,7 @@ function allProducts() {
     a = document.getElementById("productGrid")
     let x = ""
     products.map((item) => {
-        x = x + `                <div class="product-container" role="listitem">
+        x = x + ` <div class="product-container" role="listitem">
         <div class="image-wrap">
             <div class="sale">
                 SALE
@@ -121,7 +121,7 @@ function allProducts() {
                 class="product-image product-image-size-m">
             </div>
             <div class="view-product-container">
-                                <a style="opacity: 1;" class="view-button">
+                                <a style="opacity: 1;" class="view-button" onclick="productOnClick('${item.id}')">
                                     <div class="button-small white-small">
                                         <div>View Product</div>
                                     </div>
@@ -142,42 +142,77 @@ function productOnClick(x) {
     window.location = 'productView.html'
 }
 
-function singleProduct(details) {
-    details = document.getElementById("single-pro-details")
-    imageDetails = document.getElementById("single-pro-image")
+function singleProduct() {
+    details = document.getElementById("productContent")
+    imageDetails = document.getElementById("mainImage")
+    imageList = document.getElementById("item-list-container")
     id = localStorage.getItem("id")
     products.map((x) => {
         if (id === x.id) {
-            details.innerHTML = `<h4>${x.name}</h4>
-            <h2>${x.price}</h2>
-            
-            <div class="quantityContainer">
-            <button id="incrDecr" onclick="decrement()">-</button>
-            <input id="prInput" inputmode=”numeric” type="number" value="0" min=1 max=100>
-            <button id="incrDecr" onclick="increment()" >+</button>
+            details.innerHTML = `
+            <div class="discription-container">
+            <div class="product-name">
+                ${x.name}
             </div>
-
-            <button class="cart-button" onclick="openModal();">Reserve</button>
-            <h4>Product Details</h4>
-            <span>${x.description}
-            </span>`
-            a = ""
+            <p class="product-desc">
+                ${x.description}
+            </p>
+        </div>
+        <div class="product-price">
+            ${x.price}
+        </div>
+        <div class="cart-container">
+            <form class="commerce-add-to-cart-form">
+                <div class="quantity-label">
+                    quantity
+                </div>
+                <input class="cart-field" value="1"/>
+                <input class="cart-button" value="Add cart" readonly onclick="openModal()"/>
+            </form>
+        </div>`
+            imageDetails.style = `background-image:url(${x.image[0]})`
+            let a = ""
             x.image.map((i) => {
-                a = a + `<div class="small-img-col" onclick="changeImage('${i}')">
-                <img src="${i}" width="100%" class="small-img" alt="">
+                a = a + `<div class="image-list">
+                <a class="image-cover" onclick="changeImage('${i}')">                  
+                </a> 
+                <div class="list-img" style="background-image:url(${i});">                   
+                </div>
             </div>`
             })
-            imageDetails.innerHTML = `<img src="${x.image[0]}" width="100%" id="MainImg" alt="">
-            <div id="small-img-group" class="small-img-group">
-            ${a}
-            </div>`
+            imageList.innerHTML= a
+
+            // details.innerHTML = `<h4>${x.name}</h4>
+            // <h2>${x.price}</h2>
+
+            // <div class="quantityContainer">
+            // <button id="incrDecr" onclick="decrement()">-</button>
+            // <input id="prInput" inputmode=”numeric” type="number" value="0" min=1 max=100>
+            // <button id="incrDecr" onclick="increment()" >+</button>
+            // </div>
+
+            // <button class="cart-button" onclick="openModal();">Reserve</button>
+            // <h4>Product Details</h4>
+            // <span>${x.description}
+            // </span>`
+            // a = ""
+            // x.image.map((i) => {
+            //     a = a + `<div class="small-img-col" onclick="changeImage('${i}')">
+            //     <img src="${i}" width="100%" class="small-img" alt="">
+            // </div>`
+            // })
+            // imageDetails.innerHTML = `<img src="${x.image[0]}" width="100%" id="MainImg" alt="">
+            // <div id="small-img-group" class="small-img-group">
+            // ${a}
+            // </div>`
         }
     })
 }
 
 function changeImage(x) {
-    imgD = document.getElementById("MainImg")
-    imgD.src = x
+    console.log(x)
+    imgD = document.getElementById("mainImage")
+    imgD.style = `background-image:url(${x})`
 }
 
 function increment() {
