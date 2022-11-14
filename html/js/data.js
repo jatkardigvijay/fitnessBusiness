@@ -1,14 +1,14 @@
 const products = [
     {
         id: "dumbell",
-        name: "Dumbell - Primal Strength",
+        name: "Dumbbell - Primal Strength",
         description: "The sizes 1kg to 30kg of the Primal Strength Rubber Hex Dumbbells are offered in pairs. The dumbbells have a lovely design that makes them both attractive in your gym and pleasant to use. To ensure optimal comfort, they have an easy-grip, ergonomic handle made of hardened chrome",
         price: "€65",
         image: [
             "images/Equipment_Images/Dumbell/H_D.jpg",
-            "images/dumbells/dumbell10kg1.png",
-            "images/dumbells/dumbell10kg4.png",
-            "images/dumbells/dumbell10kg5.png"
+            "images/Equipment_Images/Dumbell/f1_D.jpg",
+            "images/Equipment_Images/Dumbell/f3.3_D.jpg",
+            "images/Equipment_Images/Dumbell/f2.2_D.jpg",
         ]
 
     },
@@ -19,22 +19,22 @@ const products = [
         price: "€90",
         image: [
             "images/Equipment_Images/Barbell/h.1_B.jpg",
-            "images/olympicbars/olympicbar1.png",
-            "images/olympicbars/olympicbar3.png",
-            "images/olympicbars/olympicbar4.png"
+            "images/Equipment_Images/Barbell/f2.1_B.jpg",
+            "images/Equipment_Images/Barbell/f3.1_B.jpg",
+            "images/Equipment_Images/Barbell/h.1_B.jpg",
         ]
 
     },
     {
         id: "yogamat",
         name: "Yogamat (Pilates mat)",
-        description: "With this great freebody exercise, an astute quality Yoga mat gives a feeling of relaxtion and stress reduction. Moreover, it is easy for cleaning and doing the maintainance this mat.",
+        description: "With this great freebody exercise, an astute quality Yoga mat gives a feeling of relaxtion and stress reduction. Moreover, it is easy for cleaning and doing the maintainance this mat. Equip your gym with the highest quality products with this amazing pack of 10 yoga mats. These classic mats provide the budding yogi with the perfect base to hone their technique. Comfortable and functional, these mats ensure you practice your poses in a controlled area. Purchasing this package ensures continuity in the design of your gym while providing excellent value for money.",
         price: "€15",
         image: [
             "images/Equipment_Images/Yogamat/h_Y.jpg",
-            "images/yogamats/yogamat2.png",
-            "images/yogamats/yogamat3.png",
-            "images/yogamats/yogamat4.png"
+            "images/Equipment_Images/Yogamat/f1_Y.jpg",
+            "images/Equipment_Images/Yogamat/f2.1_Y.jpg",
+            "images/Equipment_Images/Yogamat/f3_Y.jpg",
         ]
 
     },
@@ -45,9 +45,9 @@ const products = [
         price: "€40",
         image: [
             "images/Equipment_Images/Plates/h_P.jpg",
-            "images/kettlebells/kettlebell2.png",
-            "images/kettlebells/kettlebell3.png",
-            "images/kettlebells/kettlebell4.png",
+            "images/Equipment_Images/Plates/f1_P.jpg",
+            "images/Equipment_Images/Plates/f3_P.jpg",
+            "images/Equipment_Images/Plates/f3.1_P.jpg",
         ]
 
     },
@@ -57,10 +57,10 @@ const products = [
         description: "Most people agree that the Premium-Cast Kettlebells are the best premium-cast kettlebells currently on the market. The kettlebells are a need for any sports facility, gym, or CrossFit box, and their sturdy construction guarantees that they will last for years to come. These kettlebells have been expertly built using only premium-grade Iron Ore, not scrap iron (as with less expensive alternatives), and a one-piece cast mould guarantees the kettlebells' incredibly tough construction and flawless polish",
         price: "€60",
         image: [
+            "images/Equipment_Images/Kettlebell/h.2_K.jpg",
+            "images/Equipment_Images/Kettlebell/f1_k.jpg",
             "images/Equipment_Images/Kettlebell/h_K.jpg",
-            "images/indoorcyclingbike/indoorcyclingbike2.png",
-            "images/indoorcyclingbike/indoorcyclingbike3.png",
-            "images/indoorcyclingbike/indoorcyclingbike4.png"
+            "images/Equipment_Images/Kettlebell/h_K.jpg",
         ]
 
     },
@@ -111,7 +111,7 @@ function allProducts() {
     a = document.getElementById("productGrid")
     let x = ""
     products.map((item) => {
-        x = x + ` <div class="product-container" role="listitem">
+        x = x + ` <div class="product-container" id="${item.name}" role="listitem">
         <div class="image-wrap">
             <div class="sale">
                 SALE
@@ -166,8 +166,8 @@ function singleProduct() {
                 <div class="quantity-label">
                     quantity
                 </div>
-                <input class="cart-field" value="1"/>
-                <input class="cart-button" value="Add cart" readonly onclick="openModal()"/>
+                <input class="cart-field" type="number" value="0" min="1" max="100"/>
+                <input class="cart-button" value="Reserve" readonly onclick="openModal()"/>
             </form>
         </div>`
             imageDetails.style = `background-image:url(${x.image[0]})`

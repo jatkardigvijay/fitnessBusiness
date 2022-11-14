@@ -23,18 +23,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
 
     <!-- scripts -->
-
+    <script src="js/searchProducts.js"></script>
+    <script src="js/script.js"></script>
     <script src="js/data.js"></script>
 </head>
 
 <body>
     <!-- navbar section -->
     <div class="nav-container">
-        <p class="nav-logo">INJAY FITNESS<span class="material-symbols-outlined dumble">
+        <p href="index.html" class="nav-logo">INJAY FITNESS<span class="material-symbols-outlined dumble">
                 fitness_center
             </span></p>
         <div class="navlink-container">
-            <a class="nav-link">Home</a>
+            <a href="#" class="nav-link">Home</a>
             <a class="nav-link">About</a>
             <a class="nav-link">contact</a>
             <a class="nav-link">Blog</a>
@@ -57,7 +58,8 @@
             <div class="headline-grid">
                 <div>
                     <div class="text-label">Shop gym equipments</div>
-                    <div class="text-label">WHAT THEY SAY</div>
+                    <input class="search-bar" placeholder="WHAT TO SEARCH" type="search" id="search"
+                        onkeyup="searchProduct()" />
                     <div class="text-content-size">Stylish modern collection options</div>
                 </div>
             </div>
@@ -69,54 +71,6 @@
         <div class="section">
             <div>
                 <div role="list" id="productGrid" class="product-grid">
-                    <div class="product-container" role="listitem">
-                        <div class="image-wrap">
-                            <div class="sale">
-                                SALE
-                            </div>
-  
-                            <div 
-                                style="background-image:url(images/bench/bench1.png)"
-                                class="product-image product-image-size-m">
-                            </div>
-                            <div class="view-product-container">
-                                <a style="opacity: 1;" class="view-button">
-                                    <div class="button-small white-small">
-                                        <div>View Product</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product4-content-wrap"><a class="size6-link">Giraffa</a>
-                            <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
-                                class="size4-text">$&nbsp;99.99&nbsp;USD</div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="product-container" role="listitem">
-                        <div class="image-wrap">
-                            <a style="opacity: 0;" class="item-overlay w-inline-block">
-                                <div class="button-small white-small"
-                                    style="transform: translate3d(0px, 8px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                                    <div>View Product</div>
-                                </div>
-                            </a>
-                            <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_main_image_4dr.url%22%2C%22to%22%3A%22style.background-image%22%7D%5D"
-                                style="background-image:url(&quot;https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6c8c24521e02_5d960fc6f8b06d476fdd2fb1_020-Giraffa_Black_Enviro2_300.jpeg&quot;)"
-                                class="product-image product-image-size-m">
-                                <div class="label inside-label w-condition-invisible">Featured
-                                </div>
-                                <div class="label black-label sale-label w-condition-invisible">On
-                                    Sale</div>
-                            </div>
-                        </div>
-                        <div class="product4-content-wrap"><a class="size6-link">Giraffa</a>
-                            <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
-                                class="size4-text">$&nbsp;99.99&nbsp;USD</div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -125,9 +79,12 @@
 
     <!-- last section -->
     <div class="mid-sec">
-        <div class="mid-window" ></div>
+        <div class="mid-window">
 
+        </div>
     </div>
+
+    <!-- footer -->
 
     <footer class="pro-footer">
         <div class="pro-container">
@@ -181,7 +138,7 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+
     <script>
         allProducts()
     </script>
