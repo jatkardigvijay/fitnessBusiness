@@ -36,7 +36,7 @@
                 <input class="text-field" placeholder="Email ID" id="emailID" type="email" name="emailID"
                     autocomplete="off" />
                 <span id="text"></span>
-                <input class="text-field" placeholder="Phone Number" type="phone" id="phone" name="phone"
+                <input class="text-field" placeholder="Phone Number" maxlength="10" type="phone" id="phone" name="phone"
                     autocomplete="off" />
                 <span id="phoneValid"></span>
                 <textarea class="text-field" style="height: 100px;" placeholder="Address" name="address" id="address"
@@ -44,14 +44,12 @@
                 <div class="container">
                     <div class="buttons">
                         <span id="fillDetails"></span>
-                        <!-- <input type="button" name="submit" value="Reserve Now" class="reserveBtn" onclick="confirmAlert()"/> -->
+                        
                         <!-- <input type="button" name="submit" value="Reserve Now" class="reserveBtn" onclick="confirmAlert()" /> -->
                         <input type="button" name="submit" value="Reserve Now" class="reserveBtn"
                             onclick="validationFunction()" />
-                        <!-- <a class="reserveBtn" name='registration' onclick="confirmAlert()">Reserve Now</a> -->
                     </div>
                 </div>
-                <!-- <button id="reserveBtn" onclick="confirmAlert()">Reserve Now</button> -->
         </div>
         </form>
     </div>
