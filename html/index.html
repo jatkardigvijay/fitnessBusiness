@@ -43,6 +43,17 @@
                 shopping_bag
             </span>
         </div>
+        <div class="navlink-container-resp">
+            <span class="material-symbols-outlined cart-logo" onclick="openNav()">
+                menu
+            </span>
+        </div>
+        <div class="resp-nav" id="respNav">
+            <a href="#" class="nav-link">Home</a>
+            <a class="nav-link">About</a>
+            <a class="nav-link">contact</a>
+            <a class="nav-link">Blog</a>
+        </div>
     </div>
     <!-- hero section -->
     <div class="hero-section">
@@ -141,6 +152,16 @@
 
     <script>
         allProducts()
+
+        function openNav(){
+            let navPop = document.getElementById("respNav")
+            if(navPop.className === "resp-nav"){
+                navPop.className = navPop.className + " clicked"
+            }
+            else{
+                navPop.className = "resp-nav"
+            }
+        }
     </script>
 </body>
 

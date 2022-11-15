@@ -3,6 +3,7 @@ const products = [
         id: "dumbell",
         name: "Dumbbell - Primal Strength",
         description: "The sizes 1kg to 30kg of the Primal Strength Rubber Hex Dumbbells are offered in pairs. The dumbbells have a lovely design that makes them both attractive in your gym and pleasant to use. To ensure optimal comfort, they have an easy-grip, ergonomic handle made of hardened chrome",
+        rating:"★★★★☆",
         price: "€65",
         image: [
             "images/Equipment_Images/Dumbell/H_D.jpg",
@@ -129,7 +130,7 @@ function allProducts() {
                             </div>
         </div>
         <div class="product4-content-wrap"><a class="size6-link">${item.name}</a>
-            <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
+            <div 
                 class="size4-text">${item.price}</div>
         </div>
     </div>`
@@ -163,6 +164,9 @@ function singleProduct() {
         </div>
         <div class="cart-container">
             <form class="commerce-add-to-cart-form">
+            <div class="quantity-label">
+                    ${x.rating}
+                </div>
                 <div class="quantity-label">
                     quantity
                 </div>
@@ -215,11 +219,11 @@ function changeImage(x) {
     imgD.style = `background-image:url(${x})`
 }
 
-function increment() {
-    document.getElementById('prInput').stepUp();
-}
-function decrement() {
-    document.getElementById('prInput').stepDown();
-}
+// function increment() {
+//     document.getElementById('prInput').stepUp();
+// }
+// function decrement() {
+//     document.getElementById('prInput').stepDown();
+// }
 
 
