@@ -1,20 +1,20 @@
-const bar = document.getElementById('bar');
-const close = document.getElementById('close');
-const nav = document.getElementById('navbar');
+// const bar = document.getElementById('bar');
+// const close = document.getElementById('close');
+// const nav = document.getElementById('navbar');
 
-if (bar) {
-    bar.addEventListener('click', () => {
-        nav.classList.add('active');
-    })
-}
+// if (bar) {
+//     bar.addEventListener('click', () => {
+//         nav.classList.add('active');
+//     })
+// }
 
-if (close) {
-    close.addEventListener('click', () => {
-        nav.classList.remove('active');
-    })
-}
+// if (close) {
+//     close.addEventListener('click', () => {
+//         nav.classList.remove('active');
+//     })
+// }
 
-// popup
+// popup functionality
 
 function openModal() {
     let x = document.getElementById("modalContainer");
@@ -25,6 +25,7 @@ function openModal() {
     }
 }
 
+// Sweet Alert for confirmation
 
 function confirmAlert() {
 
@@ -57,20 +58,7 @@ function confirmAlert() {
 }
 
 
-// validations
-
-// function validationFunction() {
-//     // Get the value of the input field with id="numb"
-//     let x = document.getElementById("firstName").value;
-//     // If x is Not a Number or less than one or greater than 10
-//     let text;
-//     if (isNaN(x) || x < 1 || x > 10) {
-//       text = "Input not valid";
-//     } else {
-//       text = "Input OK";
-//     }
-//     document.getElementById("demo").innerHTML = text;
-//   }
+// Validations for the Reserve Form
 
 function validationFunction() {
     let flag = [];

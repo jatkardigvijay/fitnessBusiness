@@ -5,23 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Injay Fitness Shop</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <title>INJAY FITNESS STORE</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/productView.css">
+    <link rel="stylesheet" href="css/productstyle.css">
+
+    <!-- CDN'S -->
+
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Work+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/productView.css">
-    <link rel="stylesheet" href="css/productstyle.css">
+
+    <!-- Java Script and json data for products -->
+
     <script src="js/data.js"></script>
     <script src="js/script.js"></script>
+
+    <!-- Sweet alert popup cdn -->
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
+
+    <!-- modal popup for the reservation form -->
+
     <div class="modal-container" id="modalContainer">
         <div class="modal">
             <div class="modal-head">
@@ -44,16 +59,16 @@
                 <div class="container">
                     <div class="buttons">
                         <span id="fillDetails"></span>
-                        
-                        <!-- <input type="button" name="submit" value="Reserve Now" class="reserveBtn" onclick="confirmAlert()" /> -->
                         <input type="button" name="submit" value="Reserve Now" class="reserveBtn"
                             onclick="validationFunction()" />
                     </div>
                 </div>
+            </form>
         </div>
-        </form>
     </div>
+
     <!-- navbar -->
+
     <div>
         <div class="nav-container">
             <a href="index.html" class="nav-logo">INJAY FITNESS STORE<span class="material-symbols-outlined dumble">
@@ -71,84 +86,40 @@
         </div>
     </div>
 
+
     <!-- product section -->
+
     <div class="product-container">
         <div class="hero1">
             <div id="productContent" class="product-content">
-                <!-- <div class="discription-container">
-                    <div class="product-name">
-                        Dumbell
-                    </div>
-                    <p class="product-desc">
-                        The sizes 1kg to 30kg of the Primal Strength Rubber Hex Dumbbells are offered in pairs. The
-                        dumbbells have a lovely design that makes them both attractive in your gym and pleasant to use.
-                        To ensure optimal comfort, they have an easy-grip, ergonomic handle made of hardened chrome
-                    </p>
-                </div>
-                <div class="product-price">
-                    €65
-                </div>
-                <div class="cart-container">
-                    <form class="commerce-add-to-cart-form">
-                        <div class="quantity-label">
-                            quantity
-                        </div>
-                        <input  class="cart-field"/>
-                        <input class="cart-button" value="Reserve">
-                    </form>
-                </div> -->
             </div>
             <div id="mainImage" class="main-img">
             </div>
             <div id="item-list-container" class="item-list-container">
                 <div class="image-list">
-                    <a class="image-cover">                  
-                    </a> 
-                    <div class="list-img" style="background-image:url(images/Equipment_Images/Dumbell/H_D.jpg);">                   
+                    <a class="image-cover">
+                    </a>
+                    <div class="list-img" style="background-image:url(images/Equipment_Images/Dumbell/H_D.jpg);">
                     </div>
                 </div>
                 <div class="image-list">
-                    <div class="list-img" style="background-image:url(images/Equipment_Images/Dumbell/f2.1_D.jpg);">          
+                    <div class="list-img" style="background-image:url(images/Equipment_Images/Dumbell/f2.1_D.jpg);">
                         <a class="image-cover">
-                        </a>              
+                        </a>
                     </div>
                 </div>
                 <div class="image-list">
-                    <div class="list-img" style="background-image:url(images/Equipment_Images/Dumbell/f3.3_D.jpg);">   
+                    <div class="list-img" style="background-image:url(images/Equipment_Images/Dumbell/f3.3_D.jpg);">
                         <a class="image-cover">
-                        </a>                     
+                        </a>
                     </div>
                 </div>
-                
-            </div>
+            </div> 
         </div>
     </div>
 
-    <!-- <section id="header">
-        <h4 class="logo">Injay Fitness Shop</h4>
-        <div>
-            <ul id="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a class="active" href="productlist.html">Shop</a></li>
-                <li><a href="#">About</a></li>
-                <li id="lg-bag"><a href="#"><i class="fa-sharp fa-solid fa fa-shopping-bag"></i></a></li>
-                <a href="#" id="close"><i class="far fa-times"></i></a>
-            </ul>
-        </div>
-    </section>
+    <!-- footer -->
 
-    <section id="prodetails" class="section-p1">
-        <div id="single-pro-image" class="single-pro-image">
-            <img src="images/hero.jpg" width="100%" id="MainImg" alt="">
-
-            <div id="small-img-group" class="small-img-group">
-            </div>
-        </div>
-
-        <div id="single-pro-details" class="single-pro-details">
-
-        </div>
-    </section> -->
     <footer class="pro-footer">
         <div class="pro-container">
             <div class="pro-row">
@@ -196,10 +167,12 @@
                         <a href="#"><i class="fa fa-youtube"></i></a>
                     </div>
                 </div>
-
             </div>
         </div>
     </footer>
+
+    <!-- script -->
+
     <script>
         singleProduct()
     </script>

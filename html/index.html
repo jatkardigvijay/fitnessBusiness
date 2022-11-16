@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Injay Fitness Shop</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>INJAY FITNESS STORE</title>
+
+    <!-- main css -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- footer css -->
     <link rel="stylesheet" href="css/productstyle.css">
-    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet"> -->
+
     <!-- Navbar -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +24,10 @@
     <!-- Hero -->
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
 
+    <!-- Footer -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- scripts -->
     <script src="js/searchProducts.js"></script>
     <script src="js/script.js"></script>
@@ -29,7 +35,9 @@
 </head>
 
 <body>
+
     <!-- navbar section -->
+
     <div class="nav-container">
         <p href="index.html" class="nav-logo">INJAY FITNESS STORE<span class="material-symbols-outlined dumble">
                 fitness_center
@@ -55,7 +63,9 @@
             <a class="nav-link">Blog</a>
         </div>
     </div>
+
     <!-- hero section -->
+
     <div class="hero-section">
         <video class="hero-video" autoplay="autoplay" muted loop>
             <source src="images/video/pexels-ron-lach-7674509.mp4" />
@@ -64,6 +74,7 @@
     </div>
 
     <!-- content section -->
+
     <div class="content">
         <div class="section">
             <div class="headline-grid">
@@ -78,6 +89,7 @@
     </div>
 
     <!-- products section -->
+
     <div class="product">
         <div class="section">
             <div>
@@ -89,9 +101,9 @@
     </div>
 
     <!-- last section -->
+
     <div class="mid-sec">
         <div class="mid-window">
-
         </div>
     </div>
 
@@ -149,16 +161,15 @@
         </div>
     </footer>
 
-
     <script>
         allProducts()
 
-        function openNav(){
+        function openNav() {
             let navPop = document.getElementById("respNav")
-            if(navPop.className === "resp-nav"){
+            if (navPop.className === "resp-nav") {
                 navPop.className = navPop.className + " clicked"
             }
-            else{
+            else {
                 navPop.className = "resp-nav"
             }
         }
